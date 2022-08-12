@@ -1,0 +1,222 @@
+<!doctype html>
+
+<html lang=en>
+
+<head>
+  <meta charset="utf-8">
+  <title>Feedback</title>
+  <style>
+
+  		.container{
+  			width:1200px;
+        height:490px;
+  			background-color: Brown;
+        padding-left: 0px;
+        padding-right: 0px;
+        margin: 0px, 0px, 0px, 0px;
+
+  		}
+
+      body {
+        height: 900px;
+        padding-left: 150px;
+        background-image: linear-gradient(IndianRed, Brown);
+
+      }
+
+  		.header-container header{
+  			background-color : white;
+  			color : white; <!--text color -->
+  			text-transform : UPPERCASE; <!--authomatically transforms the header to Uppercase -->
+  			padding : 50 px;
+  		}
+
+  		#content{
+  			background-color: lavenderblush;
+  			width : 700px;
+  			float : left; <!--Place texts on the left side -->
+  			height : 50px;
+        padding-left: 50px;
+        padding-right: 50px;
+        padding-top: 10px;
+
+  		}
+
+  		#sidemenu{
+  			width: 250px;
+  			float: left;
+  			background-color : clear;
+        color: Gold;
+        display: inline;
+        font-size: small;
+        text-decoration: underline;
+        height : 0px;
+
+
+  		}
+
+  		.main-container {
+  			background-color : linen;
+        float: right;
+        width: 800px;
+        height : 390px;
+        padding-top: 20px;
+        padding-right: 40px;
+        padding-left: 40px;
+        margin: 5px 50px 3px 0px;
+
+  		}
+
+  		#sidemenu li {
+  			list-style-type: none;
+  			width : 400px;
+  			padding : 0 px;
+        vertical-align: left;
+        line-height: 1.5rem;
+        display: inline;
+  			background-color: clear;
+
+  		}
+
+      .arrow{
+        background: url('arrow.png') no-repeat left top;
+        height: 50px;
+        padding-top: 0px;
+        padding-left: 50px;
+        padding-right: 50px;
+
+      }
+
+      a{
+        color: Gold
+
+      }
+
+  		.footer-container{
+  			clear : both;
+  			background-color : linen;
+  			padding-top: 0px;
+        text-align: center;
+
+  		}
+
+  		.clear-fix{
+  			clear : both;
+  		}
+  </style>
+
+</head>
+<body>
+
+
+
+
+<body>
+<div class="container">
+  <!--3 main sections -->
+
+
+  <div class="header-container">
+    <header>
+      <img src="umd_logo.png" alt=""> </img>
+      </header>
+
+      <aside id="sidemenu">
+        <ul>
+          <li class="arrow"> Payroll Information </li>
+          <li class="arrow"> Performance Approval </li>
+          <li class="arrow"> TimeSheet </li>
+          <li class="arrow"> Leave Management </li>
+          <li class="arrow"> Health Benefits </li>
+          <li class="arrow"> <a href="orgchart.html"> Organization Chart </a></li>
+          <li class="arrow"> Access Management </li>
+          <li class="arrow"> Career Development </li>
+          <li class="arrow"> My Profile </li>
+          <li class="arrow"> Expense Reimbursement </li>
+          <li class="arrow"> Retirement Planning </li>
+          <li class="arrow"> Ticket Management </li>
+          <li class="arrow"> Documents </li>
+          <li class="arrow"> Feedback </li>
+
+        </ul>
+      </aside>
+
+    <div class="main-container">
+      <tr>
+          <td>
+              <div align="left">
+              <strong><font color=black>
+                <p> Please Complete Following Form. </p>
+                </font></strong>
+              </div>
+          </td>
+      </tr>
+
+
+			<div id="content">
+
+			<!-- Content Area-->
+          <tr>
+              <td>
+                  <div align="left">
+                  <strong><font color="#9B3333">FEEDBACK</font></strong>
+                  </div>
+              </td>
+          </tr>
+
+          <table>
+        <form name="FEEDBACK" onsubmit="return validateForm()" method="post" action="thankyou.html">
+        <tr>
+        <th>Case ID:</th>
+        <td>
+          <div>
+        	<input type="text" value="" required><br>
+          </div>
+        </td>
+        </tr>
+
+        <tr>
+        <th>Subject:<span style="color: red">*</span></th>
+        <td>
+          <div>
+          <input type="text" size=85 required>
+          <br>
+          </div>
+        </td>
+        </tr>
+
+        <tr>
+        <th>Comment:<span style="color: red">*</span></th>
+        <td>
+          <div>
+          <input type="text" size=40 style="height: 200px" required><br>
+          </div>
+        </td>
+        </tr>
+
+        <tr>
+        <th></th>
+        <td>
+          <div>
+        	   <input type="submit" value="Submit">
+          </div>
+        </td>
+        </tr>
+
+        </table>
+        </div>
+        </div>
+        <div class="footer-container">
+        <footer> <div>Copyright @ UMD. All Rights Reserved.</div></footer>
+        </div>
+        </div>
+</div>
+
+
+
+
+
+
+</body>
+
+</html>
